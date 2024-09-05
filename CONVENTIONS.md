@@ -5,7 +5,7 @@ Dit document is voor de conventies van dit project
 Ik gebruik **CamelCase** voor het benoemen van variabelen, functies en klassen 
 
 ### Voorbeelden:
-- **Variabelen**: `userName`, `totalScore`, `orderList`
+- **Variabelen(lowerCamelCase)**: `userName`, `totalScore`, `orderList`
 - **Functies**: `calculateTotal()`, `getUserName()`, `fetchOrderData()`
 - **Klassen**: `UserController`, `OrderManager`, `ScoreCalculator`
 
