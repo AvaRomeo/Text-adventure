@@ -18,12 +18,65 @@ static void ToonIntroductie()
     Console.Clear();
 }
 
-ToonIntroductie();
+static void ToonUitleg()
+{
+    //hier komt de uitleg van het spel
+    Console.WriteLine("Dit is een tekstavontuur. Je leest een verhaal en maakt keuzes.");
+    Console.WriteLine("De keuzes die je maakt bepalen het verloop van het verhaal.");
+    Console.WriteLine("Soms moet je een getal of een tekst invoeren.");
+    Console.WriteLine("Kies wijs en beleef een magisch avontuur!");
+}
+
+//hier komt een keuze menu
+
+static void ToonKeuzeMenu()
+{
+    Console.WriteLine("Kies een optie:");
+    Console.WriteLine("1. Start het avontuur");
+    Console.WriteLine("2. Uitleg van het spel");
+    Console.WriteLine("3. Stoppen");
+}
+
+//hier komt het keuze menu
+
+ToonKeuzeMenu();
+
+//hier komt de keuze van de speler
+
+string keuze = Console.ReadLine();
+
+//hier komt een if statement voor de keuze van de speler
+
+if (keuze == "1")
+{
+    ToonIntroductie();
+}
+else if (keuze == "2")
+{
+    ToonUitleg();
+}
+else if (keuze == "3")
+{
+    Console.WriteLine("Bedankt voor het spelen. Tot ziens!");
+    return;
+}
+else
+{
+    Console.WriteLine("Ongeldige keuze. Probeer het opnieuw.");
+}
+
+
+
+
+
 
 //--------------------------------Begin van het verhaal--------------------------------
 //Hier komt de introductie van het verhaal en welke naam je wilt hebben
 //--------------------------------------Naam--------------------------------------
 // Vraag de speler om zijn/haar naam en sla deze op
+
+Console.WriteLine("Voordat we beginnen hebben we je naar nodig!");
+Console.WriteLine();
 Console.Write("Wat is jouw naam, tovenaar/heks? ");
 string spelersNaam = Console.ReadLine();
 
@@ -109,7 +162,11 @@ Console.WriteLine("Eerst moet je een door een pub lopen de Leakey Cauldron.");
 Console.WriteLine("Je ouders vertellen je dat je door de muur moet lopen om bij Diagon Alley te komen.");
 Console.WriteLine("Je loopt naar de muur en je ouders zeggen dat je moet rennen.");
 Console.WriteLine("Je rent en je komt door de muur heen en je ziet Diagon Alley.");
+Console.WriteLine();
 Console.WriteLine("Je gaat het lijstje af om te kijken van wat je allemaal nodig hebt");
+Console.WriteLine("Op een gegeven moment kom je hagrid tegen en zie je een pakketje in zijn handen");
+Console.WriteLine("Je vraagt er naar en hij zegt dat hij een pakketje heeft opgehaald bij de bank voor hogwarts");
+Console.WriteLine();
 Console.WriteLine("Je hebt alles gehaald en je gaat weer terug naar huis.");
 Console.ReadKey();
 Console.Clear();
@@ -253,7 +310,17 @@ Console.Clear();
 // je besluit om op onderzoek te gaan wat er in de verboden verdieping zit en je komt een drie kopige hond tegen
 // en ziet dat er een luik onder zit
 
-Console.WriteLine("Op een gegeven moment wil je wat van het kasteel gaan ontdekken");
+Console.WriteLine("Op een gegeven moment wil je wat van het kasteel gaan ontdekken en besluit om naar de verboden 3rde verdieping te gaan");
+Console.WriteLine("Je ziet opeens de kat van de congierge er aan komen en je verstopt je achter een deur");
+Console.WriteLine("Het is donker daar dus je maakt een licht en ziet opeens een drie koppige hond!");
+Console.WriteLine("Je schrikt en je rent weg en je ziet een luik onder de hond");
+Console.WriteLine("Uiteindelijk kom je weer terug in je common room en ziet rowan en verteld wat je hebt gezien");
+
+Console.ReadKey();
+Console.Clear();
+// na een paar dagen hoor je dat mensen probeerde in te breken in de bank en je herinnerde dat hagrid daar wat had opgehaald en gaat er na vragen
+
+Console.WriteLine("");
 
 
 
