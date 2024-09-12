@@ -6,8 +6,8 @@ Ik gebruik **CamelCase** voor het benoemen van variabelen, functies en klassen
 
 ### Voorbeelden:
 - **Variabelen(lowerCamelCase)**: `userName`, `totalScore`, `orderList`
-- **Functies**: `calculateTotal()`, `getUserName()`, `fetchOrderData()`
-- **Klassen**: `UserController`, `OrderManager`, `ScoreCalculator`
+- **Functies(UpperCamelCase)**: `calculateTotal()`, `getUserName()`, `fetchOrderData()`
+- **Klassen(lowerCamelCase)**: `UserController`, `OrderManager`, `ScoreCalculator`
 
 
 ## 2. Gebruik van goede titels voor commits.
